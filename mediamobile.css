@@ -1,4 +1,11 @@
 @media screen and (max-width: 768px) {
+
+    .about-top .content h1 {
+        font-size: 32px;
+    }
+    .about-top .content p {
+        font-size: 12px;
+    }
     .agents-list {
         grid-template-columns: 1fr;
         margin: 40px 20px;
@@ -12,10 +19,14 @@
     }
     .our-story {
         display: block;
+        margin: 50px auto;
     }
     .story-content {
         margin-bottom: 30px;
     }
+    /* .values-section {
+        margin-top: 50px;
+    } */
     .values-grid {
         grid-template-columns: 1fr;
     }
@@ -25,6 +36,9 @@
      .contact-page {
         padding: 40px 20px;
         gap: 40px;
+    }
+    .get-in-touch {
+        /* margin-top: 10px; */
     }
 
     .get-in-touch h1 {
@@ -37,4 +51,57 @@
     .form-row{
         grid-template-columns: 1fr;
     }
+
+
+
+
+
+
+
+
+
+    .pages {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease;
+  }
+
+  .pages a {
+    padding: 1rem;
+  }
+
+  /* Hide List Your Property */
+
+  .theme > a {
+    display: none;
+  }
+
+  /* Show Hamburger */
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Open Menu */
+
+  #menu-toggle:checked ~ .pages {
+    max-height: 300px;
+    padding: 1rem 0;
+  }
 }

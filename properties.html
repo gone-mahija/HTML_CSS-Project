@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prestige Homes</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediatab.css">
+    <link rel="stylesheet" href="mediamobile.css">
     <link
       rel="shortcut icon"
       href="./assests/favicon.jpg"
@@ -24,7 +26,7 @@
   <body>
     <div class="container">
       <!-- -----------------HEADRER SECTION--------------------- -->
-      <header>
+      <!-- <header>
         <div class="logo">
           <a href="./index.html">
             <img src="./assests/logo.svg" alt="Logo" />
@@ -40,8 +42,42 @@
           <button><i class="fa-regular fa-moon"></i></button>
           <a href="./contact.html">List Your Property</a>
         </div>
-      </header>
+      </header> -->
 
+
+      <header>
+
+  <div class="logo">
+    <a href="./index.html">
+      <img src="./assests/logo.svg" alt="Logo" />
+    </a>
+  </div>
+
+  <!-- Hidden Checkbox -->
+  <input type="checkbox" id="menu-toggle">
+
+  <!-- Pages -->
+  <div class="pages">
+    <a href="./properties.html" class="header-a" style="color: green;">Properties</a>
+    <a href="./agents.html" class="header-a">Agents</a>
+    <a href="./about.html" class="header-a">About</a>
+    <a href="./contact.html" class="header-a">Contact</a>
+  </div>
+
+  <div class="theme">
+    <button>
+      <i class="fa-regular fa-moon"></i>
+    </button>
+
+    <a href="./contact.html">List Your Property</a>
+
+    <!-- Hamburger -->
+    <label for="menu-toggle" class="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </div>
+
+</header>
       <!-- -------------------MAIN SECTION------------------------ -->
       <main>
         <section class="top">
