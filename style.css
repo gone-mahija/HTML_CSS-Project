@@ -6,10 +6,15 @@
 body {
     font-family: Inter, System-ui, sans-serif;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+/* ----header---- */
 header {
     display: flex;
     justify-content: space-around;
-    /* justify-content: space-between; */
     padding: 0 20px;
     align-items: center;
     font-size: 14px;
@@ -17,7 +22,6 @@ header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 70px;
     background-color: white;
-    /* width: 100%; */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -26,18 +30,9 @@ header {
     font-weight: 500;
     color: #374151;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-     /* flex-wrap: wrap; */
-    
-}
-
-
 .logo {
     width: 200px;
     height: 50px;
-    /* border: 1px solid; */
     cursor: pointer;
 }
 a {
@@ -49,7 +44,6 @@ a {
     align-items: center;
     gap: 30px;
 }
-
 .theme {
     display: flex;
     gap: 20px;
@@ -58,7 +52,6 @@ a {
 .theme a {
     color: white;
     background-color:#16a34a;
-    /* font-weight: bold; */
     padding: 10px 15px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -76,12 +69,9 @@ button i {
 button:hover {
     cursor: pointer;
 }
-
-
 #menu-toggle {
   display: none;
 }
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -92,13 +82,11 @@ button:hover {
 .hero {
     position: relative;
     min-height: 100vh;
-
     background-image: url("./assests/background-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -110,7 +98,6 @@ button:hover {
     transparent 100%
     );
 }
-
 .hero-content {
     position: relative;
     z-index: 1;
@@ -119,7 +106,6 @@ button:hover {
     margin: 0 auto;
     padding: 120px 20px;
 }
-
 .hero-text h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 60px;
@@ -127,7 +113,6 @@ button:hover {
     line-height: 1.1;
     color: white;
 }
-
 .hero-text span {
    color: #22c55e ; 
 }
@@ -156,7 +141,6 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
 .search-form {
     background-color: white;
     max-width: 1000px;
@@ -164,14 +148,10 @@ button:hover {
     border-top-left-radius: 0;
     padding: 25px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 220px; */
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 20px;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -181,7 +161,6 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 8px;
-
     color: #374151;
     font-size: 0.875rem;
     font-weight: 600;
@@ -189,8 +168,6 @@ button:hover {
 .form-group svg {
     color: green;
 }
-
-
 .form-group select {
     color: #111827;
     padding: 0.25rem;
@@ -203,30 +180,24 @@ button:hover {
     width: 220px;
     font-size: 16px;
 }
-
 .search-btn {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-    background-color:
-#16a34a;
+    background-color:#16a34a;
     color:white;
     border:none;
     border-radius:12px;
     height: 45px;
     font-size: 16px;
-     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
-   transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.35);
+    transition: all 0.3s ease;
 }
-
 .search-action {
     display: flex;
     align-items: flex-end;
-    
 }
 .search-btn:hover {
     background-color: #15803d;
@@ -249,8 +220,6 @@ button:hover {
     line-height: 0.875rem;
     margin-top: 10px;
 }
-
-
 .featured-properties {
     padding: 80px 120px;
 }
@@ -276,9 +245,7 @@ button:hover {
     gap: 10px;
     align-items: center;
     line-height: 4;
-
 }
-
 .view-properties a, .view-properties svg{
     color: #16a34a;
     font-weight: 600;
@@ -289,14 +256,12 @@ button:hover {
 .view-properties:hover svg {
     color: #15803d;
 }
-
 .good-things {
     background-color: #f9fafb;
     padding: 100px 180px;
 }
 .good-things-title {
-    text-align: center;
-    
+    text-align: center; 
 }
 .good-things-title h2 {
     font-size: 36px;
@@ -316,17 +281,11 @@ button:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 30px;
     grid-column-gap: 10px;
-
-    margin: 40px auto;
-    
-    
+    margin: 40px auto;   
 }
 .good-item {
     text-align: center;
     padding: 0 10px;
-    /* border: 1px solid red; */
-    
-
 }
 .good-item svg {
     width: 60px;
@@ -335,7 +294,6 @@ button:hover {
     background-color: #dcfce7;
     border-radius: 12px;
     padding: 15px;
-   
 }
 .good-item h3 {
     color: #111827;
@@ -348,15 +306,11 @@ button:hover {
     font-size: 14px;
     line-height: 1.6;
 }
-
-
 .our-agents {
     background-color: #f9fafb;
     padding: 100px 180px;
-    /* padding:100px 20px; */
     text-align: center;
 }
-
 .our-agents-title h2 {
     font-size: 32px;
     line-height: 1.6;
@@ -367,49 +321,41 @@ button:hover {
     color: #4b5563;
     margin: 5px 0;
 }
-.agent-cards {
-    
+.agent-cards { 
     display: flex;
     flex-wrap: wrap;
-    
     gap: 30px;
     margin-top: 30px;
-    /* border: 1px solid red; */
-   
 }
 .agent-card {
     text-align: center;
-     flex: 1 1 300px;
-     max-width: 400px;
+    flex: 1 1 300px;
+    max-width: 400px;
     padding: 30px;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.5s ease;
+    transition: all 0.5s ease;
 }
-
 .agent-card:hover {
+    transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .agent-info {
-
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: center;
-   
+    align-items: center;  
 }
 .agent-info img {
     border-radius: 50%;
-    object-fit: cover;
-    
+    /* object-fit: cover;  */
 }
 .agent-info h3 {
     font-weight: 700;
     font-size: 18px;
     margin-top: 5px;
 }
-
 .agent-info p{
     color: #6b7280;
     font-size: 14px;
@@ -442,21 +388,16 @@ button:hover {
     gap: 5px;
     align-items: center;
 }
-
 .agent-contact-details {
     color: #4b5563;
-    font-size: 14px;
-    
+    font-size: 14px; 
 }
 .agents-anchor {
-    /* display: block; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
-    /* border: 1px solid red; */
 }
-
 .testimonials {
     margin: 100px 150px;
 }
@@ -484,7 +425,6 @@ button:hover {
     background-color: #f9fafb;
     border-radius: 1rem;
 }
-
 .testimonial-ratings {
     display: flex;
     justify-content: space-between;
@@ -523,7 +463,6 @@ button:hover {
 .profile-name h4 {
     color: #111827;
     font-weight: 600;
-
 }
 .profile-name p {
     color: #6b7280;
@@ -534,7 +473,6 @@ button:hover {
 .cta-section{
     background-color:#15803d;
     color:rgba(255,255,255,0.15);
-
     background-image:
         radial-gradient(
             circle,
@@ -546,12 +484,10 @@ button:hover {
     text-align:center;
     margin-bottom: 30px;
 }
-
 .cta-content{
     max-width:800px;
     margin:0 auto;
 }
-
 .cta-content h2{
     color:white;
     font-size:50px;
@@ -559,7 +495,6 @@ button:hover {
     font-weight:700;
     font-family:Georgia, serif;
 }
-
 .cta-content p{
     color:#dcfce7;
     font-size:18px;
@@ -567,7 +502,6 @@ button:hover {
     max-width:700px;
     margin:20px auto 0;
 }
-
 .cta-buttons{
     display:flex;
     justify-content:center;
@@ -575,7 +509,6 @@ button:hover {
     flex-wrap:wrap;
     margin-top:40px;
 }
-
 .btn-primary,
 .btn-secondary{
     text-decoration:none;
@@ -587,12 +520,10 @@ button:hover {
     align-items:center;
     gap:10px;
 }
-
 .btn-primary{
     background:white;
     color:#15803d;
-
-     transition-property: color, background-color, border-color;
+    transition-property: color, background-color, border-color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
 }
@@ -600,7 +531,6 @@ button:hover {
     background-color: #f0fdf4;
     color: #166534;
 }
-
 .btn-secondary{
     color:white;
     border:1px solid rgba(255,255,255,.3);
@@ -610,10 +540,8 @@ button:hover {
 }
 .btn-secondary:hover {
      background-color: #f3f9f6;
-     /* opacity: 0.1; */
     color: #166534;
 }
-
 .cta-contact{
     display:flex;
     justify-content:center;
@@ -622,7 +550,6 @@ button:hover {
     margin-top:50px;
     cursor: pointer;
 }
-
 .contact-item{
     display:flex;
     align-items:center;
@@ -630,7 +557,6 @@ button:hover {
     color:white;
     cursor: pointer;
 }
-
 
 /* ---------------properties.html------------------ */
 .top {
@@ -732,24 +658,30 @@ button:hover {
 
 .card {
     border-radius: 15px;
+    overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in;
 }
 .card:hover {
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
+    transform: scale(1.05);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 30px;
     
 }
 
 .image {
     position: relative;
+    overflow: hidden;
+        /* transition: transform 0.3s ease; */
+
 }
 .image img {
     width: 100%;
     display: block;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;  
+    /* transform: scale(1.05); */
 }
 .sale, .new, .pending {
     border-radius: 3.40282e38px;
@@ -943,6 +875,11 @@ footer h4 {
     padding-top: 30px;
     background-color: #f9fafb;
     border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+.agent:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 .agent-role img {
     border-radius: 50%;
